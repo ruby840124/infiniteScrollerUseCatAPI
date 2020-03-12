@@ -1,4 +1,4 @@
-## InfiniteScroller!!
+## InfiniteScroller!!(get more cats!!!><)
 ▶▶scrolling to bottom loads another page of cat image<br>
 這是一個利用cat API抓取照片的網站，利用滾輪向下滑以獲取更多的貓咪圖片。<br>
 (cat API : https://thecatapi.com/)<br>
