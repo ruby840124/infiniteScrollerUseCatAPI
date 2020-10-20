@@ -5,13 +5,14 @@
 
 ## PC版面
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/1020_PC_img.JPG" width="75%" height="75%"> <br><br>
-使用滾輪以獲取更多圖片<br><br>
+▶▶使用滾輪以獲取更多圖片<br><br>
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/1020_PC_img.gif" width="75%" height="75%"> <br>
 <br>
+
 ## mobile版面
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/1020_mobile_img.JPG" width="30%" height="30%"> <br>
+▶▶使用滾輪以獲取更多圖片<br><br>
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/10_20_mobile_gif.gif" width="30%" height="30%"> <br>
-
 <br>
 
 ### `觸發事件`
