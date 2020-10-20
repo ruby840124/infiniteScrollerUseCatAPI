@@ -17,7 +17,7 @@
 
 ### `觸發事件`
 藉由計算高度判別是否滾輪至底端以觸發事件<br><br>
-<img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/cat4.JPG" width="75%" height="75%"> <br>
+<img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/bottom.JPG" width="75%" height="75%"> <br>
 <br>
 
 ### `DEMO網站`
