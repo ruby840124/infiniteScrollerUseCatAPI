@@ -1,27 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './InfiniteList.css';
 
 class InfiniteList extends React.Component{
   constructor(props) {
     super(props);
-    this.state={img:[],setState:[]};
-    //初始圖片
+    this.state={
+      img: [],
+      setState: []
+    };
+
+    //初始貓咪圖片
     this.getData();
   }
 
-  //將事件加入window中
   componentDidMount() {
     window.addEventListener('scroll', this.onScrollHandle, true);
   }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScrollHandle);
   }
 
+   //判斷是否至底部
   onScrollHandle = event => {
-    const list = document.getElementById('list');
-    //判斷是否至底部
-    if (window.scrollY + window.innerHeight === list.clientHeight + list.offsetTop) {
-        console.log("底部");
-        this.getData();
+    const scrollY = document.documentElement.scrollTop;
+    if (parseInt(window.innerHeight + scrollY) + 5 >= document.body.offsetHeight) {
+      console.log("bottom");
+      this.getData();
     }
   }
 
@@ -30,12 +35,12 @@ class InfiniteList extends React.Component{
         .then(response => response.json())
             .then(res => {
                 let img = this.state.img;
-                if(img.length==0){
+                if(img.length === 0) {
                     this.setState({img:res});
-                }else{
+                } else {
                     res = JSON.stringify(res);
                     img = JSON.stringify(img);
-                    img = JSON.parse(img.substring(0,img.length-1)+","+ res.substring(1,res.length));
+                    img = JSON.parse(img.substring(0, img.length-1) + "," + res.substring(1, res.length));
                     this.setState({img});
                 }
             });
@@ -43,7 +48,7 @@ class InfiniteList extends React.Component{
 
   render() {
   return (
-    <ul id="list">
+    <ul id = "list">
       {this.state.img.map((img, i) => <li style={{backgroundImage: `url(${img.url})`}} key={i}/>) }
     </ul>
   )

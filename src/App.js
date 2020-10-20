@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InfiniteList from './InfiniteList';
 
 
@@ -9,16 +9,16 @@ class App extends React.Component{
   }
   render() {
   return (
-    <div>
-      <div id="topBlock">
-        <div className="topText">Cute Cat Photo!!</div>
+    <div className = "main">
+      <div className = "topBlock">
+        {'Cute Cat <3'}
       </div>
-      <div className='App'>
-        <InfiniteList />
+      <div className = 'listBlock'>
+        <InfiniteList/>
       </div>
     </div>
   )
-}
+  }
 }
 
 export default App;

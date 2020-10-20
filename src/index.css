@@ -1,61 +1,48 @@
-body {
+html, body, #root {
   margin: 0;
+  height: auto !important;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/*最上方區塊*/
-#topBlock{
+.main {
+  height:100%;
+  width: 100%;
+}
+
+.listBlock {
   display: flex;
-  background: #FFC0CB;
-  height: 8vh;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2vh;
+  margin: 0 20%;
 }
 
-.topText{
+.topBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFC0CB;
+  height: 100px;
+  margin-bottom: 30px;
   color: #ffffff;
-  font-size: 2.5vw;      
-  font-family: SignPainter-HouseScript;
+  font-size: 30px;      
+  font-family: 'Comic Sans MS';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@media only screen and (max-width: 700px) {
+  .listBlock {
+    margin: 0 10%;
+  }
 
-.App {
-  margin: 0 25%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  border-radius:10px;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-}
-
-#block {
-  width: 100%;
-  height: 700px;
-}
-
-#list {
-  overflow-y:auto;
-  width: 100%;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-/*字體樣式區域*/
-@font-face {
-  font-family: SignPainter-HouseScript;
-  src: url("https://plugins2.perfectcorp.com/assets/fonts/signpainter_housescript.eot");
-  src: url("https://plugins2.perfectcorp.com/assets/fonts/signpainter_housescript.otf") format("opentype"); 
+  .topBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFC0CB;
+    height: 40px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 22px;      
+    font-family: 'Comic Sans MS';
+  }
 }
