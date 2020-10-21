@@ -15,10 +15,10 @@
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/10_20_mobile_gif.gif" width="30%" height="30%"> <br>
 <br>
 
-### `觸發事件`
+## `觸發事件`
 藉由計算高度判別是否滾輪至底端以觸發事件<br><br>
 <img src="https://github.com/ruby840124/InfiniteScroller/blob/master/img/bottom.JPG" width="75%" height="75%"> <br>
 <br>
 
-### `DEMO網站`
+## `DEMO網站`
 https://ruby840124.github.io/InfiniteScroller/
